@@ -1,15 +1,21 @@
 
 ## Smoothing the Disentangled Latent Style Space for Unsupervised Image-to-image Translation
 
+![Python 3.6](https://img.shields.io/badge/python-3.6.7-green.svg)
+![Packagist](https://img.shields.io/badge/Pytorch-1.4.0-red.svg)
+![Last Commit](https://img.shields.io/github/last-commit/yhlleo/SmoothingLatentSpace)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)]((https://github.com/yhlleo/SmoothingLatentSpace/graphs/commit-activity))
+![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
 [Paper](./) | [Poster](./) | [Codes](https://github.com/yhlleo/SmoothingLatentSpace) <br> 
-[Yahui Liu](https://yhlleo.github.io/)<sup>12</sup>, 
+[Yahui Liu](https://yhlleo.github.io/)<sup>1,3</sup>, 
 [Enver Sangineto](https://scholar.google.com/citations?user=eJZlvlAAAAAJ&hl=it)<sup>1</sup>, 
 Yajing Chen<sup>2</sup>, 
 [Linchao Bao](https://scholar.google.com/citations?user=xQZMbkUAAAAJ&hl=en)<sup>2</sup>, 
 Haoxian Zhang<sup>2</sup>, 
 [Nicu Sebe](https://scholar.google.com/citations?user=stFCYOAAAAAJ&hl=en)<sup>1</sup>, 
 [Bruno Lepri](https://scholar.google.com/citations?hl=en&user=JfcopG0AAAAJ)<sup>3</sup>,
+[Wei Wang](https://scholar.google.com/citations?hl=en&user=k4SdlbcAAAAJ)<sup>1</sup>,
 [Marco De Nadai](https://scholar.google.com/citations?user=_4-U61wAAAAJ&hl=en)<sup>3</sup> <br>
 <sup>1</sup>University of Trento, Italy, <sup>2</sup>Tencent AI Lab, China, <sup>3</sup>Bruno Kessler Foundation, Italy. <br>
 To appear in [CVPR 2021](http://cvpr2021.thecvf.com/)  <br>
