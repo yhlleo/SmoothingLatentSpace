@@ -55,6 +55,11 @@ The models can be tested directly by using the offical codes of [StarGAN v2](htt
 
  - Training
 
+
+### Acknowledgments 
+
+This code is based on the [StarGAN v2](https://github.com/clovaai/stargan-v2). Thanks to the contributors of this project.
+
 ### Citation
 
 ```
@@ -66,4 +71,4 @@ The models can be tested directly by using the offical codes of [StarGAN v2](htt
 }
 ```
 
-### Acknowledgments 
+If you have any questions, please contact me without hesitation (yahui.liu AT unitn.it).
