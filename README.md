@@ -31,7 +31,7 @@ Our method generates smooth interpolations within and across domains in various 
 
 ### 1.Configuration
 
-See the [`environment.yaml`](./environment.yml). We provide an user-friendly configuring method via Conda system, and you can create a new Conda environment using the command:
+See the [`environment.yml`](./environment.yml). We provide an user-friendly configuring method via Conda system, and you can create a new Conda environment using the command:
 
 ```
 conda env create -f environment.yml
