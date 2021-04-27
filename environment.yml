@@ -1,0 +1,22 @@
+name: smoothlatent
+channels:
+- conda-forge
+- pytorch
+- anaconda
+dependencies:
+- python=3.6.7
+- pytorch=1.4.0
+- torchvision=0.5.0
+- cudatoolkit=10.0
+- ffmpeg=4.0.2
+- x264
+- tensorflow-gpu=1.14.0
+- pip:
+  - opencv-python==4.1.2.30 
+  - ffmpeg-python==0.2.0 
+  - scikit-image==0.16.2
+  - pillow==7.0.0 
+  - scipy==1.2.1 
+  - tqdm==4.43.0 
+  - munch==2.5.0
+  - requests
