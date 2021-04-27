@@ -7,7 +7,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)]((https://github.com/yhlleo/SmoothingLatentSpace/graphs/commit-activity))
 ![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
-** [[Paper]](./) | [[Poster]](./) | [[Codes]](https://github.com/yhlleo/SmoothingLatentSpace)** <br> 
+**[[Paper]](./) | [[Poster]](./) | [[Codes]](https://github.com/yhlleo/SmoothingLatentSpace)** <br> 
 [Yahui Liu](https://yhlleo.github.io/)<sup>1,3</sup>, 
 [Enver Sangineto](https://scholar.google.com/citations?user=eJZlvlAAAAAJ&hl=it)<sup>1</sup>, 
 Yajing Chen<sup>2</sup>, 
