@@ -57,5 +57,13 @@ The models can be tested directly by using the offical codes of [StarGAN v2](htt
 
 ### Citation
 
+```
+@inproceedings{liu2021smoothing,
+  title={Smoothing the Disentangled Latent Style Space for Unsupervised Image-to-image Translation},
+  author={Liu, Yahui and Sangineto, Enver and Chen, Yajing and Bao, Linchao and Zhang, Haoxian and Sebe, Nicu and Lepri, Bruno and Wang, Wei and De Nadai, Marco},
+  booktitle={CVPR},
+  year={2021}
+}
+```
 
 ### Acknowledgments 
