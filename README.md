@@ -41,6 +41,14 @@ Codes will be released soon ...
 
 ### 2.Testing
 
+For fast testing, we provide pretrained models on CelebA-HQ (gender) and AFHQ (animal faces):
+
+|CelebA-HQ|AFHQ|
+|:----:|:----:|
+|[GoogleDrive](https://drive.google.com/file/d/1rWksiZQAu3k0S0ttnM_lke4-Ow6EeqkH/view?usp=sharing)|[GoogleDrive](https://drive.google.com/file/d/1HRT0qdWtpf13TL0nFQedlFPpV8GA5i_-/view?usp=sharing)|
+
+The models can be tested directly by using the offical codes of [StarGAN v2](https://github.com/clovaai/stargan-v2).
+
 ### 3.Training
 
  - Data Preparing
