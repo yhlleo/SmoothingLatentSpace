@@ -29,12 +29,25 @@ The repository offers the official implementation of our paper in PyTorch.
 Our method generates smooth interpolations within and across domains in various image-to-image translation tasks.
 </p>
 
-### Configuration
+### 1.Configuration
 
-See the [`environment.yaml`](./environment.yaml). We provide an user-friendly configuring method via Conda system, and you can create a new Conda environment using the command:
+See the [`environment.yaml`](./environment.yml). We provide an user-friendly configuring method via Conda system, and you can create a new Conda environment using the command:
 
 ```
-conda env create -f environment.yaml
+conda env create -f environment.yml
 ```
 
 Codes will be released soon ...
+
+### 2.Testing
+
+### 3.Training
+
+ - Data Preparing
+
+ - Training
+
+### Citation
+
+
+### Acknowledgments 
