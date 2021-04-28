@@ -1,4 +1,4 @@
-<img src='figures/afhq.gif' align="right" width=196>
+<img src='figures/afhq.gif' align="right" width=164>
 <br><br><br>
 
 ## Smoothing the Disentangled Latent Style Space for Unsupervised Image-to-image Translation
