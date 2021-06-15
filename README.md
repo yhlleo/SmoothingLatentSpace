@@ -9,7 +9,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)]((https://github.com/yhlleo/SmoothingLatentSpace/graphs/commit-activity))
 ![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
-**[[Paper]](./) | [[Poster]](./) | [[Codes]](https://github.com/yhlleo/SmoothingLatentSpace)** <br> 
+**[[Paper]](https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_Smoothing_the_Disentangled_Latent_Style_Space_for_Unsupervised_Image-to-Image_Translation_CVPR_2021_paper.pdf) | [[Supp]](https://openaccess.thecvf.com/content/CVPR2021/supplemental/Liu_Smoothing_the_Disentangled_CVPR_2021_supplemental.pdf) | [[Poster]](https://drive.google.com/file/d/1rf3QhHXKkPdLjdbTDGlzzQqG3KR9x9cu/view?usp=sharing) | [[Video]](https://drive.google.com/file/d/1PNEym3Zc48trSs6BZzf7s_tkIUC3rGhr/view?usp=sharing) | [[Codes]](https://github.com/yhlleo/SmoothingLatentSpace)** <br> 
 [Yahui Liu](https://yhlleo.github.io/)<sup>1,3</sup>, 
 [Enver Sangineto](https://scholar.google.com/citations?user=eJZlvlAAAAAJ&hl=it)<sup>1</sup>, 
 Yajing Chen<sup>2</sup>, 
@@ -70,11 +70,13 @@ This code is based on the [StarGAN v2](https://github.com/clovaai/stargan-v2). T
 ### Citation
 
 ```
-@inproceedings{liu2021smoothing,
-  title={Smoothing the Disentangled Latent Style Space for Unsupervised Image-to-image Translation},
-  author={Liu, Yahui and Sangineto, Enver and Chen, Yajing and Bao, Linchao and Zhang, Haoxian and Sebe, Nicu and Lepri, Bruno and Wang, Wei and De Nadai, Marco},
-  booktitle={CVPR},
-  year={2021}
+@InProceedings{Liu_2021_CVPR,
+    author    = {Liu, Yahui and Sangineto, Enver and Chen, Yajing and Bao, Linchao and Zhang, Haoxian and Sebe, Nicu and Lepri, Bruno and Wang, Wei and De Nadai, Marco},
+    title     = {Smoothing the Disentangled Latent Style Space for Unsupervised Image-to-Image Translation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {10785-10794}
 }
 ```
 
