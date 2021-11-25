@@ -75,7 +75,9 @@ python3 main.py \
   --test_mode [latent or reference] \
   --input_ref [referece image path, used only in reference mode] \
   --w_hpf [1 for celeba-hq, 0 for afhq] \
-  --save_dir [save folder]
+  --save_dir [save folder] \
+  --wing_path [path to wing.ckpt] \
+  --lm_path [path to celeba_lm_mean.npz]
 ```
 
  - Test a single image by using a random latent or a reference image:
@@ -89,7 +91,9 @@ python3 main.py \
   --test_mode [latent or reference] \
   --input_ref [referece image path, used only in reference mode] \
   --w_hpf [1 for celeba-hq, 0 for afhq] \
-  --save_dir [save folder]
+  --save_dir [save folder] \
+  --wing_path [path to wing.ckpt] \
+  --lm_path [path to celeba_lm_mean.npz]
 ```
 
  - Generate a video by using latent codes:
@@ -101,7 +105,9 @@ python3 main.py \
   --resume_iter [iterations of the save model] \
   --input [input image path] \
   --w_hpf [1 for celeba-hq, 0 for afhq] \
-  --save_dir save_dir
+  --save_dir save_dir \
+  --wing_path [path to wing.ckpt] \
+  --lm_path [path to celeba_lm_mean.npz]
 ```
 
 
