@@ -10,8 +10,8 @@ DISK_DATA=${DATA_DIR}/datasets/${DATASET}
 SAMPLE_DIR=${DATA_DIR}/stargan-expr/${DATASET}_samples_${TRAIN_TYPE}
 CHECKPOINTS_DIR=${DATA_DIR}/stargan-expr/${DATASET}_checkpoints_${TRAIN_TYPE}
 EVAL_DIR=${DATA_DIR}/stargan-expr/${DATASET}_eval_${TRAIN_TYPE}
-WING_PATH=${DATA_DIR}/checkpoints/wing.ckpt
-LM_PATH=${DATA_DIR}/checkpoints/celeba_lm_mean.npz
+WING_PATH=${DATA_DIR}/pretrained_models/wing.ckpt
+LM_PATH=${DATA_DIR}/pretrained_models/celeba_lm_mean.npz
 
 GPU_ID=0
 CUDA_VISIBLE_DEVICES=${GPU_ID} python3 main.py \
