@@ -46,7 +46,7 @@ conda env create -f environment.yml
 
 Codes will be released soon ...
 
-### 2.Testing
+### 2.Fast testing
 
 For fast testing, we provide pretrained models on CelebA-HQ (gender) and AFHQ (animal faces):
 
@@ -56,11 +56,55 @@ For fast testing, we provide pretrained models on CelebA-HQ (gender) and AFHQ (a
 
 The models can be tested directly by using the offical codes of [StarGAN v2](https://github.com/clovaai/stargan-v2).
 
-### 3.Training
+### 3.Usage
 
- - Data Preparing
+ - Data Preparing: Please download the `CelebA-HQ`, `AFHQ`, `wing.ckpt` and `celeba_lm_mean.npz` provided in [StarGAN v2](https://github.com/clovaai/stargan-v2).
 
- - Training
+ - Training: we provide a script to start the training (the path of the dataset and models should be specified):
+
+```
+sh train.sh
+```
+
+ - Interpolating between two latent codes:
+
+```
+python3 main.py \
+  --mode inter \
+  --checkpoint_dir [path to the trained model folder] \
+  --resume_iter [iterations of the save model] \
+  --input [input image path] \
+  --test_mode [latent or reference] \
+  --input_ref [referece image path, used only in reference mode] \
+  --w_hpf [1 for celeba-hq, 0 for afhq] \
+  --save_dir [save folder]
+```
+
+ - Test a single image by using a random latent or a reference image:
+
+```
+python3 main.py \
+  --mode test \
+  --checkpoint_dir [path to the trained model folder] \
+  --resume_iter [iterations of the save model] \
+  --input [input image path] \
+  --test_mode [latent or reference] \
+  --input_ref [referece image path, used only in reference mode] \
+  --w_hpf [1 for celeba-hq, 0 for afhq] \
+  --save_dir [save folder]
+```
+
+ - Generate a video by using latent codes:
+
+```
+python3 main.py \
+  --mode video \
+  --checkpoint_dir [path to the trained model folder] \
+  --resume_iter [iterations of the save model] \
+  --input [input image path] \
+  --w_hpf [1 for celeba-hq, 0 for afhq] \
+  --save_dir save_dir
+```
 
 
 ### Acknowledgments 

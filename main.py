@@ -203,7 +203,7 @@ def main(args):
         masks = nets_ema.fan.get_heatmap(image) if args.w_hpf > 0 else None
         
         image_ref = None
-        if args.single_mode == 'reference':
+        if args.test_mode == 'reference':
             image_ref = Variable(transform(Image.open(args.input_ref).convert("RGB")).unsqueeze(0)).cuda()
         
         fake = test_single(
@@ -326,7 +326,7 @@ if __name__ == '__main__':
     parser.add_argument('--seed', type=int, default=777,
                         help='Seed for random number generator')
     parser.add_argument('--dataset', type=str, default='celeba_hq', help='[celeba_hq | afhq | FacePoses]')
-    parser.add_argument('--lerp_mode', type=str, default='slerp', help='[lerp | slerp]')
+    parser.add_argument('--lerp_mode', type=str, default='lerp', help='[lerp | slerp]')
     parser.add_argument('--dist_mode', type=str, default='squared_l2', help='[l2 | squared_l2], the distance type of LPIPS')
 
     # directory for training
@@ -367,7 +367,7 @@ if __name__ == '__main__':
     parser.add_argument('--eval_every', type=int, default=100000)
     parser.add_argument('--ppl_image_list', type=str, help='eval image list for ppl metric')
     parser.add_argument('--ppl_mode', type=str, default='latent', help='[latent | reference]')
-    parser.add_argument('--single_mode', type=str, default='latent', help='[latent | reference]')
+    parser.add_argument('--test_mode', type=str, default='latent', help='[latent | reference]')
     parser.add_argument('--input', type=str, help='input image name')
     parser.add_argument('--input_ref1', type=str, help='input reference image name')
     parser.add_argument('--input_ref2', type=str, help='input reference image name')
