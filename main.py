@@ -186,7 +186,6 @@ def main(args):
             y2=y2, 
             lerp_mode=args.lerp_mode
         )
-        outputs = torch.clamp(torch.cat(outputs, dim=3)*0.5+0.5, 0, 1)
         path = os.path.join(save_dir, image_name)
         vutils.save_image(outputs.data, path, padding=0)
 
