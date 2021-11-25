@@ -375,8 +375,6 @@ if __name__ == '__main__':
     parser.add_argument('--save_dir', type=str)
 
     args = parser.parse_args()
-    if not args.multi_label:
-        args.use_rf_domain = False
 
     main(args)
 

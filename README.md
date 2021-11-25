@@ -72,8 +72,6 @@ python3 main.py \
   --checkpoint_dir [path to the trained model folder] \
   --resume_iter [iterations of the save model] \
   --input [input image path] \
-  --test_mode [latent or reference] \
-  --input_ref [referece image path, used only in reference mode] \
   --w_hpf [1 for celeba-hq, 0 for afhq] \
   --save_dir [save folder] \
   --wing_path [path to wing.ckpt] \
