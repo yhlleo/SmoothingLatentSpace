@@ -44,8 +44,6 @@ See the [`environment.yml`](./environment.yml). We provide an user-friendly conf
 conda env create -f environment.yml
 ```
 
-Codes will be released soon ...
-
 ### 2.Fast testing
 
 For fast testing, we provide pretrained models on CelebA-HQ (gender) and AFHQ (animal faces):
