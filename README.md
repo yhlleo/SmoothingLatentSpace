@@ -56,15 +56,19 @@ The models can be tested directly by using the offical codes of [StarGAN v2](htt
 
 ### 3.Usage
 
- - Data Preparing: Please download the `CelebA-HQ`, `AFHQ`, `wing.ckpt` and `celeba_lm_mean.npz` provided in [StarGAN v2](https://github.com/clovaai/stargan-v2).
+ - Data Preparation: 
+ 
+Please download the `CelebA-HQ`, `AFHQ`, `wing.ckpt` and `celeba_lm_mean.npz` provided in [StarGAN v2](https://github.com/clovaai/stargan-v2).
 
- - Training: we provide a script to start the training (the path of the dataset and models should be specified):
+ - Training: 
+
+We provide a script to start the training (the path of the dataset and models should be specified):
 
 ```
 sh train.sh
 ```
 
- - Interpolating between two latent codes:
+ - Interpolate between two latent codes:
 
 ```
 python3 main.py \
