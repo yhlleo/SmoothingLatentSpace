@@ -42,7 +42,7 @@ def slerp(low, high, weight):
         (torch.sin(weight*omega)/so).unsqueeze(1) * high
     return res
 
-def interp(nets, s1, s2, lerp_step, lerp_fun):
+def interp(nets, image, s1, s2, masks, lerp_step, lerp_fun):
     outputs = []
     with torch.no_grad():
         for alpha in np.arange(0., 1., lerp_step):
@@ -69,7 +69,7 @@ def interpolations(
     s2 = nets.mapping_network(torch.randn(1, latent_dim).cuda(), y2)
  
     lerp_fun = torch.lerp if lerp_mode == "lerp" else slerp
-    outputs = interp(nets, s1, s2, lerp_step, lerp_fun)
+    outputs = interp(nets, image, s1, s2, masks, lerp_step, lerp_fun)
     outputs = torch.clamp(torch.cat(outputs, dim=3)*0.5+0.5, 0, 1)
     return outputs
 
@@ -94,10 +94,10 @@ def interpolations_loop(
 
     outputs = []
     lerp_fun = torch.lerp if lerp_mode == "lerp" else slerp
-    outputs += interp(nets, s1, s2, lerp_step, lerp_fun)
-    outputs += interp(nets, s2, s3, lerp_step, lerp_fun)
-    outputs += interp(nets, s3, s4, lerp_step, lerp_fun)
-    outputs += interp(nets, s4, s1, lerp_step, lerp_fun)
+    outputs += interp(nets, image, s1, s2, masks, lerp_step, lerp_fun)
+    outputs += interp(nets, image, s2, s3, masks, lerp_step, lerp_fun)
+    outputs += interp(nets, image, s3, s4, masks, lerp_step, lerp_fun)
+    outputs += interp(nets, image, s4, s1, masks, lerp_step, lerp_fun)
     return outputs
 
 def test_single(
@@ -372,6 +372,8 @@ if __name__ == '__main__':
     parser.add_argument('--input_ref1', type=str, help='input reference image name')
     parser.add_argument('--input_ref2', type=str, help='input reference image name')
     parser.add_argument('--target_domain', type=int, default=0)
+    parser.add_argument('--y1', type=int, default=0)
+    parser.add_argument('--y2', type=int, default=1)
     parser.add_argument('--save_dir', type=str)
 
     args = parser.parse_args()
