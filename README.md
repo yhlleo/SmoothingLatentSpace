@@ -112,6 +112,12 @@ python3 main.py \
   --lm_path [path to celeba_lm_mean.npz]
 ```
 
+ - Smoothness Evaluation:
+
+```
+python3 ps_eval.py --data_dir /path/to/data --num_inters 20
+```
+
 
 ### Acknowledgments 
 
